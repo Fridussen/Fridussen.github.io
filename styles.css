@@ -1,7 +1,7 @@
 body {
     font-family: sans-serif;
     margin: 20px;
-    background-color: #fff8f6;
+    background-color: #46105d;
     color: #333;
 }
 
@@ -11,7 +11,7 @@ body {
 }
 
 header {
-    background-color: #ffdab9;
+    background-color: #efb9ff;
     padding: 20px;
     text-align: center;
     border-radius: 10px;
@@ -20,17 +20,22 @@ header {
 
 main {
     padding: 20px;
+    display: flex; /* Use flexbox to arrange sections and the iframe */
+    flex-direction: column; /* Stack the sections and iframe vertically */
+    align-items: center; /* Center items horizontally */
 }
 
 section {
-    background-color: #ffe4c4;
+    background-color: #cfa4ff;
     padding: 14px;
     margin-bottom: 20px;
     border-radius: 10px;
+    width: 100%; /* Make sections take full width of the main container */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
 
 h1, h2 {
-    color: #af570a;
+    color: #251a96;
 }
 
 ul {
@@ -45,7 +50,18 @@ li {
 footer {
     text-align: center;
     padding: 10px;
-    background-color: #ffa872;
+    background-color: #efb9ff;
     border-radius: 10px;
     margin-top: 2px;
+}
+
+main > div {
+    margin-top: 20px; 
+    border-radius: 10px;
+    overflow: hidden; 
+}
+
+iframe {
+    border: none; 
+    display: block; 
 }
