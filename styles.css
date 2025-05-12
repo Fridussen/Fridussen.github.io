@@ -1,8 +1,8 @@
 body {
     font-family: sans-serif;
     margin: 20px;
-    background-color: #280036; /* Dark Pink */
-    color: #fff; /* Light text for contrast */
+    background-color: #FFEDFA; /* Lightest Pink */
+    color: #BE5985; /* Darkest Pink for text */
 }
 
 .container {
@@ -11,11 +11,35 @@ body {
 }
 
 header {
-    background-color: #6c223a; /* Fuschia */
+    background-color: #FFB8E0; /* Light Pink */
     padding: 20px;
     text-align: center;
     border-radius: 10px;
     margin-bottom: 20px;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    background-color: #FFB8E0; /* Light Pink */
+    padding: 14px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+ul li {
+    font-size: 18px;
+    font-weight: bold;
+    color: #BE5985; /* Darkest Pink */
+    text-shadow: 1px 1px 3px rgba(131, 10, 113, 0.5);
+    transition: color 0.3s ease;
+}
+
+ul li:hover {
+    color: #EC7FA9; /* Medium Pink */
 }
 
 main {
@@ -26,7 +50,7 @@ main {
 }
 
 section {
-    background-color: #e91e63; /* Medium Fuschia */
+    background-color: #EC7FA9; /* Medium Pink */
     padding: 14px;
     margin-bottom: 20px;
     border-radius: 10px;
@@ -35,7 +59,8 @@ section {
 }
 
 h1, h2, h4 {
-    color: #ffc2e0; /* Darker Fuschia */
+    color: #BE5985; /* Darkest Pink */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 ul {
@@ -50,7 +75,7 @@ li {
 footer {
     text-align: center;
     padding: 10px;
-    background-color: #541c3b; /* Fuschia */
+    background-color: #FFB8E0; /* Light Pink */
     border-radius: 10px;
     margin-top: 2px;
 }
@@ -71,5 +96,5 @@ iframe {
     width: 100px;
     height: 100px;
     margin-right: 45px;
-    margin-top: -40px; /* Adjust this value to lift the logo */
+    margin-top: -40px;
 }
