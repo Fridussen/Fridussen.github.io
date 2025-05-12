@@ -50,7 +50,7 @@ main {
 }
 
 section {
-    background-color: #EC7FA9; /* Medium Pink */
+    background-color: #ffaee3; /* Medium Pink */
     padding: 14px;
     margin-bottom: 20px;
     border-radius: 10px;
@@ -59,7 +59,7 @@ section {
 }
 
 h1, h2, h4 {
-    color: #BE5985; /* Darkest Pink */
+    color: #531832; /* Darkest Pink */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
