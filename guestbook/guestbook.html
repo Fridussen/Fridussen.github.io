@@ -1,127 +1,14 @@
-<!DOCTYPE html>
+      <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="/guestbook/styles.css">
-    <title>GUESTBOOK</title>
-    <script src="script.js"></script>
-    <body>
-<style> @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
-
-body {
-    font-family: 'Quicksand', sans-serif;
-    margin: 20px;
-    background-color: #e6e9f0;
-    color: #2c2c54;
-}
-
-.container {
-    max-width: 960px;
-    margin: 0 auto;
-}
-
-header {
-    background: linear-gradient(135deg, #a3bce2, #f7c1d9);
-    padding: 20px;
-    text-align: center;
-    border-radius: 12px;
-    margin-bottom: 20px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-#logo-container img {
-    width: 100px;
-    height: auto;
-    border-radius: 50%;
-    margin-bottom: 10px;
-}
-
-nav ul {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    background-color: #d8e1f0;
-    padding: 14px;
-    margin-bottom: 20px;
-    border-radius: 12px;
-    width: 100%;
-    box-sizing: border-box;
-    list-style-type: none;
-}
-
-nav ul li {
-    font-size: 18px;
-    font-weight: bold;
-    color: #2c2c54;
-    background-color: #ffffffcc;
-    padding: 8px 16px;
-    border-radius: 20px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-}
-
-nav ul li:hover {
-    background-color: #a3bce2;
-    color: white;
-}
-
-main {
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-section {
-    background: linear-gradient(135deg, #f7c1d9, #e6e9f0);
-    padding: 16px;
-    margin-bottom: 20px;
-    border-radius: 12px;
-    width: 100%;
-    box-sizing: border-box;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s ease;
-}
-
-section:hover {
-    transform: scale(1.02);
-}
-
-h1, h2 {
-    color: #511344;
-    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.6);
-}
-
-canvas {
-    border: 1px solid #2c2c54;
-    margin-top: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-}
-
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #d8e1f0;
-    border-radius: 12px;
-    margin-top: 20px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-}
-
-a {
-    color: #ff3885;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-a:hover {
-    color: #d1006f;
-    text-decoration: underline;
-}
-</style>
-        <div class="container">
+<link rel="stylesheet" href="styles.css">
+    <title>ART</title>
+        <script src="script.js"></script>
+    </head>
+    
+      <div class="container">
             <header>
                 <div id="logo-container">
                     <img src="https://64.media.tumblr.com/f95a8d2ef8152cea452fe11dfc343305/a4313fa3a8ce8b48-f3/s2048x3072/cb5e448a88e52d238b31439e0386b93e52ef8b32.pnj" alt="Logo" id="logo" width="200" height="">
@@ -130,27 +17,107 @@ a:hover {
             </header>
             <main>
                 <nav>
-                           <ul>
+                         <ul>
                         <li><a href="about/index.html">ABOUT ME</a></li>
                         <li><a href="ART/art.html">ART</a></li>
                         <li><a href="guestbook/guestbook.html">GUESTBOOK</a></li>
-                          <li><a href="mainpage/index.html">MAIN PAGE</a></li>
-
-
+                          <li><a href="index.html">MAIN PAGE</a></li>
 
                     </ul>
-                <section id="plans">
-                    <h2>Plans</h2>
-                    <ul>
-                    YOU SUCK LMAOOO
-                    </ul>
-                </section>
-     
-            </main>
-            <footer>
-                <h2>Contact</h2>
-                    <h4>Email:FUCKYOU@EMAIL.COM</h4>
-                <p> @2025 Frida Gabrielsen (。_。)</p>
-            </footer>
-        </div>
-    </body>
+
+<section id="guestbook">
+  <h2>🌟 Guestbook</h2>
+  <form id="guestbook-form">
+    <input type="text" id="name" placeholder="Your name" required />
+    <textarea id="message" placeholder="Leave a message..." required></textarea>
+    <button type="submit">Sign Guestbook</button>
+  </form>
+  <div id="entries"></div>
+</section>
+
+<style>
+  #guestbook {
+    background: linear-gradient(135deg, #e6e9f0, #f7c1d9);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  #guestbook-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #guestbook-form input,
+  #guestbook-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-family: 'Quicksand', sans-serif;
+  }
+
+  #guestbook-form button {
+    background-color: #a3bce2;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  #guestbook-form button:hover {
+    background-color: #2c2c54;
+  }
+
+  #entries {
+    margin-top: 20px;
+  }
+
+  .entry {
+    background-color: #ffffffcc;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  }
+
+  .entry strong {
+    color: #2c2c54;
+  }
+</style>
+
+<script>
+  const form = document.getElementById('guestbook-form');
+  const entriesDiv = document.getElementById('entries');
+
+  function loadEntries() {
+    const entries = JSON.parse(localStorage.getItem('guestbookEntries')) || [];
+    entriesDiv.innerHTML = '';
+    entries.forEach(entry => {
+      const div = document.createElement('div');
+      div.className = 'entry';
+      div.innerHTML = `<strong>${entry.name}</strong><p>${entry.message}</p>`;
+      entriesDiv.appendChild(div);
+    });
+  }
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    const name = document.getElementById('name').value.trim();
+    const message = document.getElementById('message').value.trim();
+    if (name && message) {
+      const entries = JSON.parse(localStorage.getItem('guestbookEntries')) || [];
+      entries.unshift({ name, message });
+      localStorage.setItem('guestbookEntries', JSON.stringify(entries));
+      form.reset();
+      loadEntries();
+    }
+  });
+
+  window.addEventListener('load', loadEntries);
+</script>
