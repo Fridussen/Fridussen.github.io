@@ -21,7 +21,14 @@ header {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-ul {
+#logo-container img {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+nav ul {
     display: flex;
     justify-content: center;
     gap: 15px;
@@ -34,7 +41,7 @@ ul {
     list-style-type: none;
 }
 
-ul li {
+nav ul li {
     font-size: 18px;
     font-weight: bold;
     color: #2c2c54;
@@ -46,7 +53,7 @@ ul li {
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
 
-ul li:hover {
+nav ul li:hover {
     background-color: #a3bce2;
     color: white;
 }
@@ -73,9 +80,16 @@ section:hover {
     transform: scale(1.02);
 }
 
-h1, h2, h4 {
+h1, h2 {
     color: #511344;
     text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.6);
+}
+
+canvas {
+    border: 1px solid #2c2c54;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 footer {
@@ -83,27 +97,8 @@ footer {
     padding: 10px;
     background-color: #d8e1f0;
     border-radius: 12px;
-    margin-top: 2px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-}
-
-main > div {
     margin-top: 20px;
-    border-radius: 12px;
-    overflow: hidden;
-}
-
-iframe {
-    border: none;
-    display: block;
-}
-
-#logo-container {
-    float: left;
-    width: 100px;
-    height: 100px;
-    margin-right: 45px;
-    margin-top: -40px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
 
 a {
