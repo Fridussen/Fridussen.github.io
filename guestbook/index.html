@@ -118,9 +118,9 @@
     }
   });
 
-  // Submit form on Space key
+  // Submit form on Enter key
   form.addEventListener('keydown', function(e) {
-    if (e.code === 'Space' && !e.shiftKey) {
+    if (e.code === 'Enter' && !e.shiftKey) {
       e.preventDefault();
       form.requestSubmit();
     }
